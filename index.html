@@ -3,132 +3,202 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Anushree Sarker — Health, Society &amp; Research</title>
-<meta name="description" content="Anushree Sarker — University of Dhaka graduate preparing for MA/PhD study in medical sociology, health-seeking behaviour, women's health, chronic disease awareness, social norms, and quantitative and qualitative methods.">
+<title>Amit Majumder — Business Development Manager</title>
+<meta name="description" content="Amit Majumder — Business Development & Key Account Manager. Enterprise software, SaaS, AI/IoT and engineering-solutions sales across Japan, Australia, the USA and Bangladesh.">
+<meta property="og:title" content="Amit Majumder — Business Development Manager">
+<meta property="og:description" content="Enterprise software & engineering-solutions sales. Strategic partnerships across Japan, Australia, the USA and Bangladesh.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f1c2e'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' font-weight='700' fill='%23b8692f' text-anchor='middle'%3EAM%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  /* ====== COLORS & FONTS — change these to restyle the whole site ====== */
-  :root {
-    --bg: #fbf9f6;
-    --paper: #ffffff;
-    --ink: #22201f;
-    --muted: #66605a;
-    --line: #e8e2da;
-    --accent: #7a2e46;      /* deep plum */
-    --accent-soft: #f5e9ed;
-    --serif: "Newsreader", Georgia, serif;
-    --sans: "Source Sans 3", system-ui, -apple-system, sans-serif;
+  /* ===== Colours & fonts — change these to restyle the whole site ===== */
+  :root{
+    --ink:#0f1c2e;        /* dark navy: text, hero background */
+    --ink-soft:#43506a;   /* secondary text */
+    --paper:#f7f4ee;      /* page background */
+    --card:#ffffff;
+    --line:#e3ddd2;
+    --accent:#b8692f;     /* copper accent */
+    --accent-soft:#f3e4d6;
+    --serif:'Fraunces', Georgia, serif;
+    --sans:'DM Sans', system-ui, -apple-system, Segoe UI, sans-serif;
   }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 17.5px; line-height: 1.65; }
-  a { color: var(--accent); text-underline-offset: 3px; }
-  .wrap { max-width: 860px; margin: 0 auto; padding: 0 22px; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
 
-  /* Navigation */
-  nav { position: sticky; top: 0; z-index: 10; background: rgba(251,249,246,.93); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
-  nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 18px; height: 58px; }
-  .logo { font-family: var(--serif); font-size: 20px; font-weight: 600; color: var(--ink); text-decoration: none; white-space: nowrap; }
-  .links { display: flex; gap: 20px; overflow-x: auto; scrollbar-width: none; }
-  .links::-webkit-scrollbar { display: none; }
-  .links a { color: var(--muted); text-decoration: none; font-size: 15px; font-weight: 600; white-space: nowrap; }
-  .links a:hover { color: var(--accent); }
+  /* ===== Navigation ===== */
+  nav{position:sticky;top:0;z-index:10;background:rgba(15,28,46,.92);backdrop-filter:blur(8px);color:#fff}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .logo{font-family:var(--serif);font-weight:600;font-size:20px;text-decoration:none;letter-spacing:.2px}
+  .logo span{color:var(--accent)}
+  nav ul{list-style:none;display:flex;gap:26px}
+  nav ul a{text-decoration:none;font-size:15px;opacity:.82;transition:opacity .2s}
+  nav ul a:hover{opacity:1}
+  .menu-btn{display:none;background:none;border:0;color:#fff;font-size:24px;cursor:pointer}
 
-  /* Hero */
-  .hero { padding: 80px 0 64px; }
-  .hero .wrap { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center; }
-  .eyebrow { font-size: 13px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
-  h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(42px, 7vw, 62px); line-height: 1.05; letter-spacing: -.015em; }
-  .tagline { font-family: var(--serif); font-style: italic; font-size: 21px; color: var(--muted); margin-top: 14px; max-width: 540px; line-height: 1.45; }
-  .meta { margin-top: 22px; color: var(--muted); font-size: 15.5px; }
-  .btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
-  .btn { display: inline-block; padding: 11px 20px; border-radius: 6px; font-weight: 600; font-size: 15px; text-decoration: none; }
-  .btn.primary { background: var(--accent); color: #fff; }
-  .btn.ghost { background: var(--paper); border: 1px solid var(--line); color: var(--ink); }
+  /* ===== Hero ===== */
+  .hero{background:var(--ink);color:#fff;padding:84px 0 96px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-180px;top:-180px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(184,105,47,.28),transparent 70%)}
+  .hero .wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:center;position:relative;z-index:1}
+  .eyebrow{text-transform:uppercase;letter-spacing:2.5px;font-size:13px;color:var(--accent);font-weight:600;margin-bottom:18px}
+  .hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(40px,6vw,64px);line-height:1.05;margin-bottom:20px}
+  .hero p.lead{font-size:19px;color:#c9d0dc;max-width:560px;margin-bottom:34px}
+  .btns{display:flex;gap:14px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:13px 24px;border-radius:6px;text-decoration:none;font-weight:600;font-size:15px;transition:transform .15s,background .2s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-primary{background:var(--accent);color:#fff}
+  .btn-primary:hover{background:#a35a24}
+  .btn-ghost{border:1.5px solid rgba(255,255,255,.35);color:#fff}
+  .btn-ghost:hover{border-color:#fff}
+  .photo{justify-self:center;position:relative}
+  .photo img{width:280px;height:340px;object-fit:cover;object-position:center top;border-radius:10px;display:block;box-shadow:0 24px 48px rgba(0,0,0,.35)}
+  .photo::before{content:"";position:absolute;inset:16px -16px -16px 16px;border:2px solid var(--accent);border-radius:10px;z-index:-1}
 
-  .portrait { width: 220px; height: 220px; border-radius: 50%; overflow: hidden; background: var(--accent-soft); display: grid; place-items: center; border: 6px solid var(--paper); box-shadow: 0 0 0 1px var(--line); }
-  .portrait img { width: 100%; height: 100%; object-fit: cover; }
-  .portrait span { font-family: var(--serif); font-size: 62px; color: var(--accent); }
+  /* ===== Stats ===== */
+  .stats{margin-top:-48px;position:relative;z-index:2}
+  .stats .grid{display:grid;grid-template-columns:repeat(4,1fr);background:var(--card);border-radius:10px;box-shadow:0 10px 30px rgba(15,28,46,.08);overflow:hidden}
+  .stat{padding:28px 24px;border-right:1px solid var(--line)}
+  .stat:last-child{border-right:0}
+  .stat b{display:block;font-family:var(--serif);font-size:36px;font-weight:600;color:var(--accent);line-height:1.1}
+  .stat > span{font-size:14px;color:var(--ink-soft)}
 
-  /* Sections */
-  section { padding: 60px 0; border-top: 1px solid var(--line); }
-  .label { font-size: 13px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
-  h2 { font-family: var(--serif); font-weight: 600; font-size: 31px; line-height: 1.2; margin-bottom: 20px; }
-  h3 { font-size: 18px; line-height: 1.35; }
-  p + p { margin-top: 14px; }
-  .muted { color: var(--muted); }
+  /* ===== Sections ===== */
+  section{padding:88px 0}
+  .sec-head{margin-bottom:44px}
+  .sec-head .eyebrow{margin-bottom:10px}
+  .sec-head h2{font-family:var(--serif);font-weight:600;font-size:clamp(30px,4vw,42px);line-height:1.15}
+  .about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:56px}
+  .about-grid p{margin-bottom:16px;color:var(--ink-soft)}
+  .about-grid p:first-child{font-size:20px;color:var(--ink)}
+  .path{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px 26px;box-shadow:0 6px 24px rgba(15,28,46,.05);align-self:start}
+  .path h3{font-family:var(--serif);font-size:22px;font-weight:600;margin-bottom:4px}
+  .path-sub{font-size:14px;color:var(--ink-soft);margin-bottom:22px}
+  .path ol{list-style:none;position:relative}
+  .path ol::before{content:"";position:absolute;left:6px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--line),var(--accent))}
+  .path li{position:relative;padding:0 0 20px 28px}
+  .path li:last-child{padding-bottom:0}
+  .path li::before{content:"";position:absolute;left:0;top:5px;width:14px;height:14px;border-radius:50%;background:var(--card);border:2px solid var(--accent)}
+  .path .yr{display:block;font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--accent)}
+  .path strong{display:block;font-size:15.5px;line-height:1.35;margin:2px 0}
+  .path em{display:block;font-style:normal;font-size:13.5px;color:var(--ink-soft)}
+  .path li p{font-size:13.5px;color:var(--ink-soft);margin:6px 0 0;line-height:1.5}
+  .path li.now{background:var(--accent-soft);border-radius:8px;padding:12px 12px 12px 28px}
+  .path li.now::before{background:var(--accent);box-shadow:0 0 0 4px rgba(184,105,47,.2);top:17px}
 
-  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
-  .chip { background: var(--accent-soft); color: var(--accent); font-size: 14.5px; font-weight: 600; padding: 6px 13px; border-radius: 99px; }
+  /* ===== Experience ===== */
+  .alt{background:#efeae1}
+  .timeline{position:relative;padding-left:32px}
+  .timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:var(--line)}
+  .job{position:relative;background:var(--card);border-radius:10px;padding:28px 30px;margin-bottom:22px;box-shadow:0 2px 10px rgba(15,28,46,.04)}
+  .job::before{content:"";position:absolute;left:-32px;top:32px;width:16px;height:16px;border-radius:50%;background:var(--paper);border:3px solid var(--accent)}
+  .job-top{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;align-items:baseline}
+  .job h3{font-family:var(--serif);font-size:23px;font-weight:600}
+  .date{font-size:14px;color:var(--accent);font-weight:600;white-space:nowrap}
+  .org{font-weight:600;margin-top:2px}
+  .org-desc{font-size:14px;color:var(--ink-soft);margin-bottom:12px}
+  .job ul{padding-left:20px;color:var(--ink-soft);font-size:16px}
+  .job li{margin-bottom:6px}
+  .sub-role{margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+  .sub-role h4{font-size:17px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:6px}
 
-  /* Research area cards */
-  .areas { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
-  .area { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 20px 20px 18px; }
-  .area .num { font-family: var(--serif); font-size: 15px; color: var(--accent); font-weight: 600; }
-  .area h3 { font-family: var(--serif); font-size: 21px; font-weight: 600; margin: 2px 0 6px; }
-  .area p { color: var(--muted); font-size: 15.5px; line-height: 1.55; }
+  /* ===== Expertise ===== */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:28px}
+  .card .ico{width:44px;height:44px;border-radius:8px;background:var(--accent-soft);display:grid;place-items:center;margin-bottom:16px}
+  .card h3{font-family:var(--serif);font-size:21px;font-weight:600;margin-bottom:10px}
+  .card p{color:var(--ink-soft);font-size:15.5px}
+  .sectors{margin-top:44px;display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  .sector h4{font-size:15px;text-transform:uppercase;letter-spacing:1.2px;color:var(--accent);margin-bottom:10px}
+  .tags{display:flex;flex-wrap:wrap;gap:8px}
+  .tag{background:var(--card);border:1px solid var(--line);padding:6px 13px;border-radius:999px;font-size:14px}
 
-  /* Paper card */
-  .paper { background: var(--paper); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 10px; padding: 28px; }
-  .paper h3 { font-family: var(--serif); font-weight: 600; font-size: 23px; line-height: 1.3; }
-  .paper .byline { color: var(--muted); font-size: 15px; margin: 8px 0 18px; }
-  .paper p { font-size: 16.5px; }
-  .facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 22px 0; }
-  .fact { background: var(--bg); border-radius: 8px; padding: 14px; }
-  .fact b { display: block; font-family: var(--serif); font-size: 26px; color: var(--accent); line-height: 1.1; }
-  .fact small { color: var(--muted); font-size: 14px; }
-  .keywords { font-size: 14.5px; color: var(--muted); margin-top: 18px; }
-  details summary { cursor: pointer; color: var(--accent); font-weight: 600; font-size: 15.5px; margin-top: 16px; }
-  details[open] summary { margin-bottom: 12px; }
+  /* ===== Education ===== */
+  .edu{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .edu .card h3{font-size:19px}
+  .edu .card .lvl{font-size:13px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
 
-  /* Timelines */
-  .timeline { list-style: none; }
-  .timeline li { display: grid; grid-template-columns: 130px 1fr; gap: 20px; padding: 16px 0; border-bottom: 1px dashed var(--line); }
-  .timeline li:last-child { border-bottom: 0; }
-  .when { color: var(--muted); font-size: 15px; font-weight: 600; padding-top: 1px; }
-  .timeline p { color: var(--muted); font-size: 15.5px; margin-top: 2px; }
+  /* ===== Contact ===== */
+  .contact{background:var(--ink);color:#fff;text-align:center}
+  .contact h2{font-family:var(--serif);font-size:clamp(32px,4.5vw,46px);font-weight:600;margin-bottom:14px}
+  .contact p{color:#c9d0dc;max-width:560px;margin:0 auto 32px}
+  .contact .btns{justify-content:center}
+  .contact .email{display:block;margin-top:22px;color:#c9d0dc;font-size:15px}
+  footer{background:#0a1422;color:#7d889c;font-size:14px;padding:22px 0;text-align:center}
 
-  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
-  .plain-list { list-style: none; }
-  .plain-list li { padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 16px; }
-  .plain-list li:last-child { border-bottom: 0; }
+  /* ===== Extras: badge, motion, hover ===== */
+  .badge{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);padding:7px 14px 7px 12px;border-radius:999px;font-size:13.5px;color:#e6eaf0;margin-bottom:22px}
+  .badge i{width:9px;height:9px;border-radius:50%;background:#3ecf8e;box-shadow:0 0 0 0 rgba(62,207,142,.6);animation:pulse 2s infinite}
+  @keyframes pulse{70%{box-shadow:0 0 0 9px rgba(62,207,142,0)}100%{box-shadow:0 0 0 0 rgba(62,207,142,0)}}
+  .hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:44px 44px;mask-image:linear-gradient(to bottom,#000 30%,transparent)}
+  .hero h1 em{font-style:italic;color:var(--accent)}
+  .trust{margin-top:34px;display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13.5px;color:#8f9bb0}
+  .trust b{color:#c9d0dc;font-weight:500}
+  .card,.job,.mkt{transition:transform .25s,box-shadow .25s,border-color .25s}
+  .card:hover,.mkt:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(15,28,46,.09);border-color:var(--accent)}
+  .job:hover{transform:translateX(4px);box-shadow:0 10px 26px rgba(15,28,46,.08)}
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}.badge i{animation:none}}
 
-  /* Posts */
-  .post { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 24px; margin-bottom: 16px; }
-  .post-meta { display: flex; gap: 10px; align-items: center; font-size: 14px; color: var(--muted); margin-bottom: 6px; }
-  .post-tag { background: var(--accent-soft); color: var(--accent); font-weight: 600; padding: 2px 9px; border-radius: 99px; font-size: 13px; }
-  .post h3 { font-family: var(--serif); font-size: 22px; font-weight: 600; margin-bottom: 10px; }
-  .post p { font-size: 16.5px; }
-  .post .more { display: none; }
-  .post.open .more { display: block; margin-top: 14px; }
-  .toggle { background: none; border: 0; color: var(--accent); font: inherit; font-weight: 600; font-size: 15px; cursor: pointer; margin-top: 10px; padding: 0; }
-  #show-all { margin-top: 6px; }
+  /* ===== Process ===== */
+  .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;counter-reset:st}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px 20px;position:relative;counter-increment:st}
+  .step::before{content:"0" counter(st);font-family:var(--serif);font-size:34px;font-weight:600;color:var(--accent-soft);-webkit-text-stroke:1px var(--accent);display:block;line-height:1;margin-bottom:14px}
+  .step h3{font-size:17px;margin-bottom:6px}
+  .step p{font-size:14.5px;color:var(--ink-soft);line-height:1.5}
 
-  /* Contact */
-  .contact-list { list-style: none; margin-top: 6px; }
-  .contact-list li { display: flex; gap: 14px; padding: 9px 0; }
-  .contact-list span { width: 110px; flex-shrink: 0; color: var(--muted); font-size: 15px; padding-top: 1px; }
-  .contact-list a { word-break: break-all; }
+  /* ===== Markets ===== */
+  .markets{background:var(--ink);color:#fff}
+  .markets .sec-head h2{color:#fff}
+  .markets .sec-head p{color:#9aa6ba;max-width:600px;margin-top:10px}
+  .mkts{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .mkt{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:26px 22px}
+  .mkt:hover{background:rgba(255,255,255,.07);box-shadow:none}
+  .mkt .code{font-family:var(--serif);font-size:40px;font-weight:600;color:var(--accent);line-height:1}
+  .mkt h3{font-size:18px;margin:10px 0 6px}
+  .mkt p{font-size:14.5px;color:#9aa6ba;line-height:1.5}
 
-  footer { border-top: 1px solid var(--line); padding: 30px 0 46px; color: var(--muted); font-size: 14px; }
+  /* ===== Recommendations ===== */
+  .quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  .quote{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:58px 30px 26px;position:relative;display:flex;flex-direction:column;transition:transform .25s,box-shadow .25s,border-color .25s}
+  .quote:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(15,28,46,.09);border-color:var(--accent)}
+  .quote::before{content:"\201C";font-family:var(--serif);font-size:84px;line-height:1;color:var(--accent);opacity:.35;position:absolute;top:8px;left:26px}
+  .quote blockquote{font-size:16.5px;line-height:1.65;color:var(--ink);flex:1;margin-bottom:22px}
+  .quote blockquote p+p{margin-top:10px}
+  .who{display:flex;align-items:center;gap:14px;padding-top:18px;border-top:1px solid var(--line)}
+  .av{width:46px;height:46px;border-radius:50%;background:var(--ink);color:var(--accent);font-family:var(--serif);font-weight:600;display:grid;place-items:center;flex-shrink:0;font-size:16px}
+  .who b{display:block;font-size:15.5px}
+  .who span{display:block;font-size:13.5px;color:var(--ink-soft);line-height:1.4}
+  .who .rel{color:var(--accent);font-size:12.5px;font-weight:600;margin-top:2px}
+  .more-link{text-align:center;margin-top:30px}
+  .more-link a{color:var(--accent);font-weight:600;text-decoration:none;font-size:15px}
+  .more-link a:hover{text-decoration:underline}
 
-  @media (max-width: 680px) {
-    body { font-size: 17px; }
-    .hero { padding: 48px 0 44px; }
-    .hero .wrap { grid-template-columns: 1fr; gap: 26px; }
-    .portrait { width: 140px; height: 140px; order: -1; border-width: 4px; }
-    .portrait span { font-size: 40px; }
-    .facts { grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
-    .fact { padding: 10px; }
-    .fact b { font-size: 21px; }
-    .fact small { font-size: 12.5px; }
-    .paper { padding: 22px 18px; }
-    .two-col { grid-template-columns: 1fr; gap: 28px; }
-    .timeline li { grid-template-columns: 1fr; gap: 2px; }
-    .logo { font-size: 18px; }
-    .links { gap: 16px; }
+  /* ===== Mobile ===== */
+  @media (max-width:860px){
+    .hero .wrap,.about-grid{grid-template-columns:1fr}
+    .photo{order:-1}
+    .photo img{width:200px;height:240px}
+    .stats .grid{grid-template-columns:repeat(2,1fr)}
+    .stat:nth-child(2){border-right:0}
+    .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+    .cards,.edu,.sectors{grid-template-columns:1fr}
+    .steps{grid-template-columns:1fr 1fr}
+    .quotes{grid-template-columns:1fr}
+    .quote{padding:54px 22px 22px}
+    .step:last-child{grid-column:1 / -1}
+    .mkts{grid-template-columns:1fr 1fr}
+    .menu-btn{display:block}
+    nav ul{display:none;position:absolute;top:60px;left:0;right:0;background:var(--ink);flex-direction:column;gap:0;padding:8px 24px 16px}
+    nav ul.open{display:flex}
+    nav ul a{display:block;padding:10px 0}
+    section{padding:64px 0}
+    .job{padding:22px}
   }
 </style>
 </head>
@@ -136,221 +206,328 @@
 
 <nav>
   <div class="wrap">
-    <a class="logo" href="#top">Anushree Sarker</a>
-    <div class="links">
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#education">Education</a>
-      <a href="#posts">Posts</a>
-      <a href="#contact">Contact</a>
-    </div>
+    <a href="#top" class="logo">Amit Majumder<span>.</span></a>
+    <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+    <ul id="menu" onclick="this.classList.remove('open')">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#recommendations">Recommendations</a></li>
+      <li><a href="#markets">Markets</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </div>
 </nav>
 
+<!-- ================= HERO ================= -->
 <header class="hero" id="top">
   <div class="wrap">
     <div>
-      <div class="eyebrow">Prospective MA / PhD applicant</div>
-      <h1>Anushree Sarker</h1>
-      <p class="tagline">Studying how culture, gender and social norms shape the way people understand and seek care for illness.</p>
-      <p class="meta">Department of Sanskrit, University of Dhaka · Mymensingh, Bangladesh</p>
+      <div class="badge"><i></i>Open to senior BD &amp; key account leadership roles</div>
+      <div class="eyebrow">Business Development &amp; Key Account Management</div>
+      <h1>Turning complex solutions into <em>lasting partnerships.</em></h1>
+      <p class="lead">I'm Amit Majumder, an engineer-turned-business-development manager selling enterprise software, SaaS, AI/IoT and engineering solutions to clients across Japan, Australia, the USA and Bangladesh.</p>
       <div class="btns">
-        <a class="btn primary" href="#research">Read my research</a>
-        <a class="btn ghost" href="#contact">Contact me</a>
+        <a class="btn btn-primary" href="#contact">Get in touch</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/amitmaj/" target="_blank" rel="noopener">LinkedIn ↗</a>
       </div>
+      <div class="trust"><b>Enterprise software</b><b>SaaS</b><b>AI &amp; IoT</b><b>Government tenders</b><b>Engineering solutions</b></div>
     </div>
-    <!-- To add a photo: upload a square image named photo.jpg next to this file. -->
-    <div class="portrait"><img src="photo.jpg" alt="Anushree Sarker" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'AS'}))"></div>
+    <div class="photo">
+      <img src="data:image/jpeg;base64,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" alt="Portrait of Amit Majumder">
+    </div>
   </div>
 </header>
 
+<!-- ================= STATS ================= -->
+<div class="stats">
+  <div class="wrap">
+    <div class="grid">
+      <div class="stat"><b><span class="count" data-to="30">30</span>+</b><span>Enterprise &amp; strategic accounts</span></div>
+      <div class="stat"><b>BDT <span class="count" data-to="5">5</span> Cr+</b><span>Annual business opportunities</span></div>
+      <div class="stat"><b><span class="count" data-to="4">4</span></b><span>Markets: JP · AU · US · BD</span></div>
+      <div class="stat"><b><span class="count" data-to="13">13</span>+</b><span>Years in engineering &amp; tech</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ================= ABOUT ================= -->
 <section id="about">
   <div class="wrap">
-    <div class="label">About</div>
-    <h2>From classical texts to health and society</h2>
-    <p>I hold a Bachelor's and a Master's degree from the Department of Sanskrit at the University of Dhaka. Working closely with texts taught me to read carefully for belief, meaning and tradition — and led me to ask how those same cultural ideas shape everyday decisions about health.</p>
-    <p>I am now preparing for master's and doctoral study, and my work sits where six areas meet: <strong>medical sociology</strong>, <strong>health-seeking behaviour</strong>, <strong>women's health</strong>, <strong>chronic disease awareness</strong>, <strong>social norms</strong>, and <strong>quantitative and qualitative methods</strong>. In Bangladesh, I study how fatalism, gender norms, family decision-making and access to care shape when — and whether — people seek help for illness.</p>
-    <div class="chips">
-      <span class="chip">Medical sociology</span>
-      <span class="chip">Health-seeking behaviour</span>
-      <span class="chip">Women's health</span>
-      <span class="chip">Chronic disease awareness</span>
-      <span class="chip">Social norms</span>
-      <span class="chip">Quantitative &amp; qualitative methods</span>
+    <div class="sec-head">
+      <div class="eyebrow">About</div>
+      <h2>Engineering mind, commercial focus.</h2>
     </div>
-  </div>
-</section>
-
-<section id="research">
-  <div class="wrap">
-    <div class="label">Research</div>
-    <h2>Research areas</h2>
-    <div class="areas">
-      <div class="area"><div class="num">01</div><h3>Medical sociology</h3><p>Health and illness as social experiences, shaped by culture, class, gender and the institutions of care.</p></div>
-      <div class="area"><div class="num">02</div><h3>Health-seeking behaviour</h3><p>How and when people decide to seek care — and why many turn first to traditional healers or delay formal treatment.</p></div>
-      <div class="area"><div class="num">03</div><h3>Women's health</h3><p>Gender inequality, autonomy and family decision-making in women's access to screening, diagnosis and care.</p></div>
-      <div class="area"><div class="num">04</div><h3>Chronic disease awareness</h3><p>Knowledge and prevention of diabetes, hypertension, heart disease and cancer, especially breast cancer.</p></div>
-      <div class="area"><div class="num">05</div><h3>Social norms</h3><p>Beliefs such as fatalism, stigma and religious interpretation of illness, and how they shape everyday health decisions.</p></div>
-      <div class="area"><div class="num">06</div><h3>Quantitative &amp; qualitative methods</h3><p>Mixed-methods design: surveys analysed in SPSS alongside in-depth interviews analysed in NVivo.</p></div>
-    </div>
-
-    <h2 style="margin-top:52px">Recent paper</h2>
-    <article class="paper">
-      <h3>The Influence of Cultural Mindsets on Chronic Disease and Cancer Awareness: A Sociological Study of Health Beliefs in Bangladesh</h3>
-      <div class="byline">Anushree Sarker · Working paper, 2024–2025 · Unpublished</div>
-      <p>Bangladesh faces a growing burden of chronic disease — diabetes, hypertension, cardiovascular disease and cancer, especially breast cancer. This study asks how cultural mindsets shape awareness of these conditions, and why diagnosis is so often delayed in rural communities.</p>
-      <div class="facts">
-        <div class="fact"><b>500</b><small>survey respondents</small></div>
-        <div class="fact"><b>50</b><small>in-depth interviews</small></div>
-        <div class="fact"><b>3</b><small>regions: Dhaka, Barisal, Sylhet</small></div>
-      </div>
-      <p>Urban respondents showed greater knowledge of chronic disease and breast cancer, went for regular check-ups more often and relied more on formal healthcare. Rural respondents expressed more fatalistic attitudes, relied more on traditional healers, and knew less about breast cancer and breast self-examination.</p>
-      <details>
-        <summary>Read the full abstract</summary>
-        <p>Bangladesh is facing growing concerns about chronic diseases, including diabetes, hypertension, cardiovascular disease, and cancer, particularly breast cancer. Although many chronic diseases are preventable and some are treatable, cultural beliefs, socioeconomic disparities, and unequal access to healthcare contribute to low levels of awareness and delayed diagnosis, particularly in rural communities. This research project investigates how cultural mindsets influence awareness of chronic diseases and cancer in Bangladesh, with a particular focus on breast cancer as a major health concern among women.</p>
-        <p>This mixed-methods study involved a quantitative survey of 500 people living in Dhaka, Barisal, and Sylhet, as well as qualitative interviews with 50 respondents. The results indicate prominent urban–rural differences: urban respondents demonstrated higher levels of general knowledge about chronic diseases and breast cancer, attended regular medical check-ups more frequently, and relied more on formal healthcare services. Rural respondents, by contrast, exhibited more fatalistic attitudes, greater reliance on traditional healers, and lower levels of breast cancer awareness and knowledge of breast self-examination.</p>
-        <p>This research highlights the urgent need for culturally responsive health interventions that accommodate local customs, address gender inequality, and improve the availability of healthcare services. Such interventions could be delivered through mobile health clinics, mass media, and community health workers. Policymakers should reduce disparities by developing strategies that reflect local cultural realities and promote the early diagnosis of chronic diseases and cancer.</p>
-      </details>
-      <p class="keywords"><strong>Keywords:</strong> cultural beliefs, chronic diseases, breast cancer awareness, health-seeking behaviour, Bangladesh</p>
-      <p class="keywords">Full paper available on request — <a href="#contact">get in touch</a>.</p>
-    </article>
-
-  </div>
-</section>
-
-<section id="education">
-  <div class="wrap">
-    <div class="label">Education</div>
-    <h2>Academic background</h2>
-    <ul class="timeline">
-      <li>
-        <div class="when">2021</div>
-        <div><h3>Master of Arts (M.A.) in Sanskrit</h3><p>Department of Sanskrit, University of Dhaka</p></div>
-      </li>
-      <li>
-        <div class="when">2020</div>
-        <div><h3>Bachelor of Arts (B.A.) in Sanskrit</h3><p>Department of Sanskrit, University of Dhaka · Coursework in research methodology</p></div>
-      </li>
-      <li>
-        <div class="when">2016</div>
-        <div><h3>Higher Secondary Certificate (HSC), Science</h3><p>Govt. Muminunnesa Women's College, Mymensingh · GPA 5.00 / 5.00</p></div>
-      </li>
-      <li>
-        <div class="when">2014</div>
-        <div><h3>Secondary School Certificate (SSC), Science</h3><p>Mukul Niketan High School, Mymensingh · GPA 5.00 / 5.00</p></div>
-      </li>
-    </ul>
-
-    <div class="two-col" style="margin-top:44px">
+    <div class="about-grid">
       <div>
-        <h2>Skills &amp; tests</h2>
-        <ul class="plain-list">
-          <li><strong>IELTS</strong> — Overall 7.0 (2026)</li>
-          <li><strong>SPSS</strong> — quantitative analysis</li>
-          <li><strong>NVivo</strong> — qualitative analysis</li>
-          <li>Microsoft Word, Excel, PowerPoint</li>
+        <p>I'm a B2B sales and business development professional with a B.Sc. in Electrical &amp; Electronic Engineering, and a career that spans both engineering solutions and enterprise software.</p>
+        <p>As Business Development Manager at DreamOnline Limited — a Japan-backed Bangladeshi software company — I manage a portfolio of 30+ enterprise and strategic accounts and lead international business development for custom software, SaaS, AI, IoT and digital transformation work.</p>
+        <p>My day-to-day spans client discovery, solution consulting, technical and commercial proposals, government tenders and contract negotiation, working closely with engineering and delivery teams so that what we sell is what we deliver.</p>
+        <p>I'm looking to grow into a senior business development and key account leadership role where I can win strategic accounts, build lasting partnerships and drive profitable growth.</p>
+      </div>
+      <aside class="path">
+        <h3>Career progression</h3>
+        <p class="path-sub">13+ years from engineering operations to international business development.</p>
+        <ol>
+          <li>
+            <span class="yr">2013 – 2014</span>
+            <strong>Engineer, Operations</strong>
+            <em>Service BD</em>
+            <p>Built a hands-on engineering foundation in technical operations and service delivery.</p>
+          </li>
+          <li>
+            <span class="yr">2014 – 2019</span>
+            <strong>Executive → Senior Executive → Assistant Manager, Sales</strong>
+            <em>Emkay Enterprises Limited</em>
+            <p>Promoted twice while selling fire safety, security and electromechanical solutions.</p>
+          </li>
+          <li>
+            <span class="yr">2019 – 2022</span>
+            <strong>Deputy Manager / Manager, Business Development</strong>
+            <em>A+ Consultancy &amp; Mega Solutions</em>
+            <p>Led business development, bids and stakeholder relations for engineering consultancy.</p>
+          </li>
+          <li>
+            <span class="yr">2022 – 2023</span>
+            <strong>Assistant Manager, Business Development</strong>
+            <em>DreamOnline Limited</em>
+            <p>Moved deliberately into international software sales for Japanese and global markets.</p>
+          </li>
+          <li class="now">
+            <span class="yr">2023 – Present</span>
+            <strong>Business Development Manager</strong>
+            <em>DreamOnline Limited</em>
+            <p>Leading 30+ strategic accounts across Japan, Australia, the USA and Bangladesh.</p>
+          </li>
+        </ol>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Experience</div>
+      <h2>Where I've worked.</h2>
+    </div>
+    <div class="timeline">
+
+      <div class="job">
+        <div class="job-top"><h3>Business Development Manager</h3><span class="date">Mar 2023 – Present</span></div>
+        <div class="org">DreamOnline Limited</div>
+        <div class="org-desc">Japan-backed Bangladeshi software company: custom mobile, web, AI and IoT solutions and offshore development</div>
+        <ul>
+          <li>Own a portfolio of 30+ enterprise and strategic accounts across Japan, Australia, the USA and Bangladesh.</li>
+          <li>Contribute BDT 5+ crore in annual business opportunities through prospecting, account development and partner engagement.</li>
+          <li>Sell custom software, enterprise applications, SaaS, AI, IoT and digital transformation engagements, including project-based and offshore models.</li>
+          <li>Lead technical and commercial proposals, government tenders, EOIs and business cases.</li>
+          <li>Develop opportunities across education, restaurant operations, e-commerce, sports &amp; fitness and health information management.</li>
+        </ul>
+        <div class="sub-role">
+          <h4><span>Assistant Manager, Business Development</span><span class="date">Sep 2022 – Feb 2023</span></h4>
+          <ul>
+            <li>Moved from engineering solutions into international software sales across Japanese and global markets.</li>
+            <li>Supported enterprise client acquisition, proposals, account management and strategic partnerships.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-top"><h3>Manager / Deputy Manager, Business Development</h3><span class="date">Apr 2019 – Aug 2022</span></div>
+        <div class="org">A+ Consultancy &amp; Mega Solutions</div>
+        <div class="org-desc">Engineering consultancy and industrial solutions: design, fire safety, electrical, lighting and automation</div>
+        <ul>
+          <li>Led business development for structural, architectural and electrical design consultancy, plus safety, security and electromechanical solutions.</li>
+          <li>Built relationships with industrial clients, developers, consultants, government agencies and regulators.</li>
+          <li>Managed bid preparation, proposals and commercial negotiations.</li>
         </ul>
       </div>
-      <div>
-        <h2>Experience</h2>
-        <ul class="plain-list">
-          <li><strong>Intern, Bangladesh Krishi Bank</strong><br><span class="muted">Oct–Dec 2025 · customer service, regulatory reporting</span></li>
-          <li><strong>Independent research</strong><br><span class="muted">2024–2025 · mixed-methods study on health beliefs</span></li>
+
+      <div class="job">
+        <div class="job-top"><h3>Assistant Manager / Senior Executive / Executive, Sales</h3><span class="date">Oct 2014 – Mar 2019</span></div>
+        <div class="org">Emkay Enterprises Limited</div>
+        <div class="org-desc">Design, engineering and construction firm</div>
+        <ul>
+          <li>Progressed from Executive to Assistant Manager with growing responsibility for solution sales and client relationships.</li>
+          <li>Sold fire safety, electromechanical, CCTV &amp; surveillance, industrial automation, lightning protection and LED lighting solutions.</li>
+          <li>Developed new accounts and handled commercial discussions to support growth and retention.</li>
         </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-top"><h3>Engineer, Operations</h3><span class="date">Feb 2013 – Sep 2014</span></div>
+        <div class="org">Service BD</div>
+        <ul>
+          <li>Coordinated technical operations and service delivery to quality and timeline requirements.</li>
+          <li>Supported client communication, resource coordination and performance monitoring.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= RECOMMENDATIONS ================= -->
+<section id="recommendations">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Recommendations</div>
+      <h2>What colleagues say.</h2>
+    </div>
+    <div class="quotes">
+
+      <figure class="quote">
+        <blockquote><p>I've always been impressed by his professionalism, technical expertise, and innovative mindset. What stands out most is his ability to clearly understand client needs and translate them into effective technical solutions. I highly recommend Amit for any organization or client looking for a skilled and forward-thinking technology professional.</p></blockquote>
+        <figcaption class="who"><div class="av">AR</div><div><b>A S M Rashel</b><span>Cybersecurity Analyst &amp; Penetration Tester · CISM, CEH</span><span class="rel">Collaborated across companies</span></div></figcaption>
+      </figure>
+
+      <figure class="quote">
+        <blockquote><p>It's a pleasure to recommend Amit Majumder, our Business Development Manager, whose leadership, strategic insight, and commitment to growth have been truly impactful.</p><p>Amit has a natural ability to identify new business opportunities, build strong client relationships, and drive sustainable growth. His approach is both thoughtful and data-driven.</p></blockquote>
+        <figcaption class="who"><div class="av">NK</div><div><b>Nayab Jinat Kiran</b><span>Head of Finance · HR Business Partner</span><span class="rel">Worked with Amit on different teams</span></div></figcaption>
+      </figure>
+
+      <figure class="quote">
+        <blockquote><p>Amit has an amazing personality with a positive attitude towards his work. He is very diligent with an excellent work ethic, and has always impressed me with his top-notch interpersonal skills, strategic thinking and leadership skills. Amit would be a great asset to any team and can steer towards success.</p></blockquote>
+        <figcaption class="who"><div class="av">NH</div><div><b>Nadvi Hasnine</b><span>Account Manager · Certified ScrumMaster®</span><span class="rel">Worked together across companies</span></div></figcaption>
+      </figure>
+
+      <figure class="quote">
+        <blockquote><p>I've had the privilege of working under Amit Majumder's leadership, and it's been one of the most rewarding professional experiences of my career. Amit brings a rare blend of strategic vision, creative thinking, and hands-on leadership that consistently drives growth and innovation.</p></blockquote>
+        <figcaption class="who"><div class="av">AA</div><div><b>Ayeed Mohammed Alamgir</b><span>Sales &amp; Business Development · Software Sales</span><span class="rel">Reported to Amit directly</span></div></figcaption>
+      </figure>
+
+    </div>
+    <div class="more-link"><a href="https://www.linkedin.com/in/amitmaj/" target="_blank" rel="noopener">Read all recommendations on LinkedIn ↗</a></div>
+  </div>
+</section>
+
+<!-- ================= HOW I WORK ================= -->
+<section id="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">How I work</div>
+      <h2>From first conversation to signed contract.</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Discover</h3><p>Understand the client's business, pain points and decision makers.</p></div>
+      <div class="step"><h3>Consult</h3><p>Shape the right solution with engineering and delivery teams.</p></div>
+      <div class="step"><h3>Propose</h3><p>Write technical and commercial proposals, tenders, EOIs and business cases.</p></div>
+      <div class="step"><h3>Negotiate</h3><p>Align scope, price and terms, and close the deal.</p></div>
+      <div class="step"><h3>Grow</h3><p>Keep delivery on track and expand the account over time.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MARKETS ================= -->
+<section id="markets" class="markets">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Global reach</div>
+      <h2>Four markets, one standard of service.</h2>
+      <p>I manage enterprise and strategic accounts across Asia-Pacific and North America.</p>
+    </div>
+    <div class="mkts">
+      <div class="mkt"><div class="code">JP</div><h3>Japan</h3><p>Core market for enterprise software and offshore development.</p></div>
+      <div class="mkt"><div class="code">AU</div><h3>Australia</h3><p>Enterprise and strategic accounts for custom software and SaaS.</p></div>
+      <div class="mkt"><div class="code">US</div><h3>USA</h3><p>Enterprise and strategic accounts for custom software and digital transformation.</p></div>
+      <div class="mkt"><div class="code">BD</div><h3>Bangladesh</h3><p>Home market: enterprise software, government tenders and engineering solutions.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPERTISE ================= -->
+<section id="expertise">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Expertise</div>
+      <h2>What I bring to the table.</h2>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8692f" stroke-width="2" stroke-linecap="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></div>
+        <h3>Sales &amp; Growth</h3>
+        <p>Enterprise software and SaaS sales, key account management, international business development, pipeline and revenue growth, strategic partnerships and alliances.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8692f" stroke-width="2" stroke-linecap="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M8 13h8M8 17h5"/></svg></div>
+        <h3>Bids &amp; Contracts</h3>
+        <p>Proposal, tender and EOI management; technical and commercial proposals; contract negotiation and deal closure.</p>
+      </div>
+      <div class="card">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b8692f" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.2 4.2l2.8 2.8M17 17l2.8 2.8M1 12h4M19 12h4M4.2 19.8L7 17M17 7l2.8-2.8"/></svg></div>
+        <h3>Technical &amp; Solutions</h3>
+        <p>Solution consulting and pre-sales, engineering consultancy and solution sales, and close coordination with engineering and delivery teams.</p>
       </div>
     </div>
 
-    <h2 style="margin-top:44px">Leadership &amp; activities</h2>
-    <ul class="plain-list">
-      <li>Inter-Faculty Debate Champion, Faculty of Arts, University of Dhaka (2018)</li>
-      <li>Vice President &amp; Treasurer, Sanskrit Debating Club (2019–2022)</li>
-      <li>Office Secretary, Dhaka University Tourist Society (2018–2021)</li>
-      <li>Organiser: World Tourism Day (2017–2019), DU Centenary (2021), COVID-19 Social Awareness Program (2021)</li>
-      <li>Member: DU Model United Nations Association (DUMUNA), DU IT Society (DUITS)</li>
-    </ul>
+    <div class="sectors">
+      <div class="sector">
+        <h4>Software &amp; Digital</h4>
+        <div class="tags"><span class="tag">Custom software</span><span class="tag">Enterprise apps</span><span class="tag">SaaS</span><span class="tag">AI</span><span class="tag">IoT</span><span class="tag">Digital transformation</span><span class="tag">Offshore development</span></div>
+      </div>
+      <div class="sector">
+        <h4>Engineering Solutions</h4>
+        <div class="tags"><span class="tag">Fire safety</span><span class="tag">CCTV &amp; surveillance</span><span class="tag">Electromechanical</span><span class="tag">Industrial automation</span><span class="tag">Design consultancy</span><span class="tag">LED lighting</span></div>
+      </div>
+      <div class="sector">
+        <h4>Industries</h4>
+        <div class="tags"><span class="tag">Education</span><span class="tag">Restaurant operations</span><span class="tag">E-commerce</span><span class="tag">Sports &amp; fitness</span><span class="tag">Health information</span></div>
+      </div>
+      <div class="sector">
+        <h4>Languages</h4>
+        <div class="tags"><span class="tag">English</span><span class="tag">Bangla</span></div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section id="posts">
+<!-- ================= EDUCATION ================= -->
+<section id="education" class="alt">
   <div class="wrap">
-    <div class="label">Posts</div>
-    <h2>Notes &amp; updates</h2>
-    <div id="post-list"></div>
-    <button class="toggle" id="show-all" hidden>Show older posts</button>
+    <div class="sec-head">
+      <div class="eyebrow">Education</div>
+      <h2>Foundations.</h2>
+    </div>
+    <div class="edu">
+      <div class="card"><div class="lvl">B.Sc. · EEE</div><h3>Ahsanullah University of Science &amp; Technology</h3><p>Electrical &amp; Electronic Engineering</p></div>
+      <div class="card"><div class="lvl">HSC · Science</div><h3>Notre Dame College, Dhaka</h3><p>Higher Secondary Certificate</p></div>
+      <div class="card"><div class="lvl">SSC · Science</div><h3>Mymensingh Zilla School</h3><p>Secondary School Certificate</p></div>
+    </div>
   </div>
 </section>
 
-<section id="contact">
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="contact">
   <div class="wrap">
-    <div class="label">Contact</div>
-    <h2>Get in touch</h2>
-    <p>I welcome conversations with prospective supervisors, researchers and anyone working on health and society in South Asia.</p>
-    <ul class="contact-list">
-      <li><span>Email</span><a href="mailto:anushreesarker3@gmail.com">anushreesarker3@gmail.com</a></li>
-      <li><span>University</span><a href="mailto:anushree-96-2016918876@snskrt.du.ac.bd">anushree-96-2016918876@snskrt.du.ac.bd</a></li>
-      <li><span>Location</span>Mymensingh, Bangladesh</li>
-    </ul>
+    <div class="eyebrow">Contact</div>
+    <h2>Let's build something together.</h2>
+    <p>Open to senior business development and key account leadership roles, and always happy to talk about partnerships in enterprise software and engineering solutions.</p>
+    <div class="btns">
+      <a class="btn btn-primary" href="mailto:amitmajumder.bd@gmail.com">Email me</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/amitmaj/" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
+    </div>
+    <span class="email">amitmajumder.bd@gmail.com · Bangladesh</span>
   </div>
 </section>
 
-<footer>
-  <div class="wrap">© <span id="yr">2026</span> Anushree Sarker</div>
-</footer>
-
-<script src="posts.js"></script>
+<footer>© <span id="yr">2026</span> Amit Majumder</footer>
 <script>
-  (function () {
-    var list = document.getElementById('post-list');
-    var posts = (typeof POSTS !== 'undefined' ? POSTS : []).slice()
-      .sort(function (a, b) { return (b.date || '').localeCompare(a.date || ''); });
-    var SHOW = 5;
-
-    function esc(s) {
-      return String(s).replace(/[&<>"']/g, function (c) {
-        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
-      });
-    }
-    function linkify(s) {
-      return s.replace(/(https?:\/\/[^\s<]+[^\s<.,;:)])/g, '<a href="$1">$1</a>');
-    }
-    function para(s) { return '<p>' + linkify(esc(s.trim())).replace(/\n/g, '<br>') + '</p>'; }
-    function niceDate(d) {
-      var t = new Date(d + 'T00:00:00');
-      return isNaN(t) ? esc(d) : t.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
-    }
-
-    if (!posts.length) { list.innerHTML = '<p class="muted">No posts yet.</p>'; return; }
-
-    posts.forEach(function (p, i) {
-      var paras = String(p.text || '').split(/\n\s*\n/).filter(function (x) { return x.trim(); });
-      var el = document.createElement('article');
-      el.className = 'post';
-      if (i >= SHOW) el.hidden = true;
-      el.innerHTML =
-        '<div class="post-meta"><time>' + niceDate(p.date) + '</time>' +
-        (p.tag ? '<span class="post-tag">' + esc(p.tag) + '</span>' : '') + '</div>' +
-        '<h3>' + esc(p.title || 'Untitled') + '</h3>' +
-        (paras[0] ? para(paras[0]) : '') +
-        (paras.length > 1 ? '<div class="more">' + paras.slice(1).map(para).join('') + '</div>' +
-          '<button class="toggle">Read more</button>' : '');
-      var btn = el.querySelector('.toggle');
-      if (btn) btn.addEventListener('click', function () {
-        el.classList.toggle('open');
-        btn.textContent = el.classList.contains('open') ? 'Show less' : 'Read more';
-      });
-      list.appendChild(el);
-    });
-
-    var showAll = document.getElementById('show-all');
-    if (posts.length > SHOW) {
-      showAll.hidden = false;
-      showAll.addEventListener('click', function () {
-        list.querySelectorAll('.post[hidden]').forEach(function (e) { e.hidden = false; });
-        showAll.hidden = true;
-      });
-    }
-    document.getElementById('yr').textContent = new Date().getFullYear();
-  })();
+document.getElementById('yr').textContent=new Date().getFullYear();
+// Fade sections in as you scroll
+var els=document.querySelectorAll('.sec-head,.about-grid > *,.job,.card,.quote,.step,.mkt,.sector,.contact .wrap');
+els.forEach(function(e){e.classList.add('reveal')});
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+  els.forEach(function(e){io.observe(e)});
+}else{els.forEach(function(e){e.classList.add('in')})}
+// Count the stats up from zero
+document.querySelectorAll('.count').forEach(function(c){
+  var to=+c.dataset.to,t0=null;c.textContent='0';
+  function tick(t){t0=t0||t;var p=Math.min((t-t0)/1400,1);c.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(tick)}
+  setTimeout(function(){requestAnimationFrame(tick)},300);
+});
 </script>
 </body>
 </html>
