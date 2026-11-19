@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anushree Sarker — Health, Society &amp; Research</title>
+<meta name="description" content="Anushree Sarker — University of Dhaka graduate preparing for MA/PhD study in medical sociology, health-seeking behaviour, women's health, chronic disease awareness, social norms, and quantitative and qualitative methods.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  /* ====== COLORS & FONTS — change these to restyle the whole site ====== */
+  :root {
+    --bg: #fbf9f6;
+    --paper: #ffffff;
+    --ink: #22201f;
+    --muted: #66605a;
+    --line: #e8e2da;
+    --accent: #7a2e46;      /* deep plum */
+    --accent-soft: #f5e9ed;
+    --serif: "Newsreader", Georgia, serif;
+    --sans: "Source Sans 3", system-ui, -apple-system, sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 17.5px; line-height: 1.65; }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 22px; }
+
+  /* Navigation */
+  nav { position: sticky; top: 0; z-index: 10; background: rgba(251,249,246,.93); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; gap: 18px; height: 58px; }
+  .logo { font-family: var(--serif); font-size: 20px; font-weight: 600; color: var(--ink); text-decoration: none; white-space: nowrap; }
+  .links { display: flex; gap: 20px; overflow-x: auto; scrollbar-width: none; }
+  .links::-webkit-scrollbar { display: none; }
+  .links a { color: var(--muted); text-decoration: none; font-size: 15px; font-weight: 600; white-space: nowrap; }
+  .links a:hover { color: var(--accent); }
+
+  /* Hero */
+  .hero { padding: 80px 0 64px; }
+  .hero .wrap { display: grid; grid-template-columns: 1fr auto; gap: 40px; align-items: center; }
+  .eyebrow { font-size: 13px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-bottom: 14px; }
+  h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(42px, 7vw, 62px); line-height: 1.05; letter-spacing: -.015em; }
+  .tagline { font-family: var(--serif); font-style: italic; font-size: 21px; color: var(--muted); margin-top: 14px; max-width: 540px; line-height: 1.45; }
+  .meta { margin-top: 22px; color: var(--muted); font-size: 15.5px; }
+  .btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+  .btn { display: inline-block; padding: 11px 20px; border-radius: 6px; font-weight: 600; font-size: 15px; text-decoration: none; }
+  .btn.primary { background: var(--accent); color: #fff; }
+  .btn.ghost { background: var(--paper); border: 1px solid var(--line); color: var(--ink); }
+
+  .portrait { width: 220px; height: 220px; border-radius: 50%; overflow: hidden; background: var(--accent-soft); display: grid; place-items: center; border: 6px solid var(--paper); box-shadow: 0 0 0 1px var(--line); }
+  .portrait img { width: 100%; height: 100%; object-fit: cover; }
+  .portrait span { font-family: var(--serif); font-size: 62px; color: var(--accent); }
+
+  /* Sections */
+  section { padding: 60px 0; border-top: 1px solid var(--line); }
+  .label { font-size: 13px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-bottom: 6px; }
+  h2 { font-family: var(--serif); font-weight: 600; font-size: 31px; line-height: 1.2; margin-bottom: 20px; }
+  h3 { font-size: 18px; line-height: 1.35; }
+  p + p { margin-top: 14px; }
+  .muted { color: var(--muted); }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+  .chip { background: var(--accent-soft); color: var(--accent); font-size: 14.5px; font-weight: 600; padding: 6px 13px; border-radius: 99px; }
+
+  /* Research area cards */
+  .areas { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .area { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 20px 20px 18px; }
+  .area .num { font-family: var(--serif); font-size: 15px; color: var(--accent); font-weight: 600; }
+  .area h3 { font-family: var(--serif); font-size: 21px; font-weight: 600; margin: 2px 0 6px; }
+  .area p { color: var(--muted); font-size: 15.5px; line-height: 1.55; }
+
+  /* Paper card */
+  .paper { background: var(--paper); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 10px; padding: 28px; }
+  .paper h3 { font-family: var(--serif); font-weight: 600; font-size: 23px; line-height: 1.3; }
+  .paper .byline { color: var(--muted); font-size: 15px; margin: 8px 0 18px; }
+  .paper p { font-size: 16.5px; }
+  .facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 22px 0; }
+  .fact { background: var(--bg); border-radius: 8px; padding: 14px; }
+  .fact b { display: block; font-family: var(--serif); font-size: 26px; color: var(--accent); line-height: 1.1; }
+  .fact small { color: var(--muted); font-size: 14px; }
+  .keywords { font-size: 14.5px; color: var(--muted); margin-top: 18px; }
+  details summary { cursor: pointer; color: var(--accent); font-weight: 600; font-size: 15.5px; margin-top: 16px; }
+  details[open] summary { margin-bottom: 12px; }
+
+  /* Timelines */
+  .timeline { list-style: none; }
+  .timeline li { display: grid; grid-template-columns: 130px 1fr; gap: 20px; padding: 16px 0; border-bottom: 1px dashed var(--line); }
+  .timeline li:last-child { border-bottom: 0; }
+  .when { color: var(--muted); font-size: 15px; font-weight: 600; padding-top: 1px; }
+  .timeline p { color: var(--muted); font-size: 15.5px; margin-top: 2px; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; }
+  .plain-list { list-style: none; }
+  .plain-list li { padding: 7px 0; border-bottom: 1px solid var(--line); font-size: 16px; }
+  .plain-list li:last-child { border-bottom: 0; }
+
+  /* Posts */
+  .post { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 24px; margin-bottom: 16px; }
+  .post-meta { display: flex; gap: 10px; align-items: center; font-size: 14px; color: var(--muted); margin-bottom: 6px; }
+  .post-tag { background: var(--accent-soft); color: var(--accent); font-weight: 600; padding: 2px 9px; border-radius: 99px; font-size: 13px; }
+  .post h3 { font-family: var(--serif); font-size: 22px; font-weight: 600; margin-bottom: 10px; }
+  .post p { font-size: 16.5px; }
+  .post .more { display: none; }
+  .post.open .more { display: block; margin-top: 14px; }
+  .toggle { background: none; border: 0; color: var(--accent); font: inherit; font-weight: 600; font-size: 15px; cursor: pointer; margin-top: 10px; padding: 0; }
+  #show-all { margin-top: 6px; }
+
+  /* Contact */
+  .contact-list { list-style: none; margin-top: 6px; }
+  .contact-list li { display: flex; gap: 14px; padding: 9px 0; }
+  .contact-list span { width: 110px; flex-shrink: 0; color: var(--muted); font-size: 15px; padding-top: 1px; }
+  .contact-list a { word-break: break-all; }
+
+  footer { border-top: 1px solid var(--line); padding: 30px 0 46px; color: var(--muted); font-size: 14px; }
+
+  @media (max-width: 680px) {
+    body { font-size: 17px; }
+    .hero { padding: 48px 0 44px; }
+    .hero .wrap { grid-template-columns: 1fr; gap: 26px; }
+    .portrait { width: 140px; height: 140px; order: -1; border-width: 4px; }
+    .portrait span { font-size: 40px; }
+    .facts { grid-template-columns: 1fr 1fr 1fr; gap: 8px; }
+    .fact { padding: 10px; }
+    .fact b { font-size: 21px; }
+    .fact small { font-size: 12.5px; }
+    .paper { padding: 22px 18px; }
+    .two-col { grid-template-columns: 1fr; gap: 28px; }
+    .timeline li { grid-template-columns: 1fr; gap: 2px; }
+    .logo { font-size: 18px; }
+    .links { gap: 16px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top">Anushree Sarker</a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#education">Education</a>
+      <a href="#posts">Posts</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Prospective MA / PhD applicant</div>
+      <h1>Anushree Sarker</h1>
+      <p class="tagline">Studying how culture, gender and social norms shape the way people understand and seek care for illness.</p>
+      <p class="meta">Department of Sanskrit, University of Dhaka · Mymensingh, Bangladesh</p>
+      <div class="btns">
+        <a class="btn primary" href="#research">Read my research</a>
+        <a class="btn ghost" href="#contact">Contact me</a>
+      </div>
+    </div>
+    <!-- To add a photo: upload a square image named photo.jpg next to this file. -->
+    <div class="portrait"><img src="photo.jpg" alt="Anushree Sarker" onerror="this.replaceWith(Object.assign(document.createElement('span'),{textContent:'AS'}))"></div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="label">About</div>
+    <h2>From classical texts to health and society</h2>
+    <p>I hold a Bachelor's and a Master's degree from the Department of Sanskrit at the University of Dhaka. Working closely with texts taught me to read carefully for belief, meaning and tradition — and led me to ask how those same cultural ideas shape everyday decisions about health.</p>
+    <p>I am now preparing for master's and doctoral study, and my work sits where six areas meet: <strong>medical sociology</strong>, <strong>health-seeking behaviour</strong>, <strong>women's health</strong>, <strong>chronic disease awareness</strong>, <strong>social norms</strong>, and <strong>quantitative and qualitative methods</strong>. In Bangladesh, I study how fatalism, gender norms, family decision-making and access to care shape when — and whether — people seek help for illness.</p>
+    <div class="chips">
+      <span class="chip">Medical sociology</span>
+      <span class="chip">Health-seeking behaviour</span>
+      <span class="chip">Women's health</span>
+      <span class="chip">Chronic disease awareness</span>
+      <span class="chip">Social norms</span>
+      <span class="chip">Quantitative &amp; qualitative methods</span>
+    </div>
+  </div>
+</section>
+
+<section id="research">
+  <div class="wrap">
+    <div class="label">Research</div>
+    <h2>Research areas</h2>
+    <div class="areas">
+      <div class="area"><div class="num">01</div><h3>Medical sociology</h3><p>Health and illness as social experiences, shaped by culture, class, gender and the institutions of care.</p></div>
+      <div class="area"><div class="num">02</div><h3>Health-seeking behaviour</h3><p>How and when people decide to seek care — and why many turn first to traditional healers or delay formal treatment.</p></div>
+      <div class="area"><div class="num">03</div><h3>Women's health</h3><p>Gender inequality, autonomy and family decision-making in women's access to screening, diagnosis and care.</p></div>
+      <div class="area"><div class="num">04</div><h3>Chronic disease awareness</h3><p>Knowledge and prevention of diabetes, hypertension, heart disease and cancer, especially breast cancer.</p></div>
+      <div class="area"><div class="num">05</div><h3>Social norms</h3><p>Beliefs such as fatalism, stigma and religious interpretation of illness, and how they shape everyday health decisions.</p></div>
+      <div class="area"><div class="num">06</div><h3>Quantitative &amp; qualitative methods</h3><p>Mixed-methods design: surveys analysed in SPSS alongside in-depth interviews analysed in NVivo.</p></div>
+    </div>
+
+    <h2 style="margin-top:52px">Recent paper</h2>
+    <article class="paper">
+      <h3>The Influence of Cultural Mindsets on Chronic Disease and Cancer Awareness: A Sociological Study of Health Beliefs in Bangladesh</h3>
+      <div class="byline">Anushree Sarker · Working paper, 2024–2025 · Unpublished</div>
+      <p>Bangladesh faces a growing burden of chronic disease — diabetes, hypertension, cardiovascular disease and cancer, especially breast cancer. This study asks how cultural mindsets shape awareness of these conditions, and why diagnosis is so often delayed in rural communities.</p>
+      <div class="facts">
+        <div class="fact"><b>500</b><small>survey respondents</small></div>
+        <div class="fact"><b>50</b><small>in-depth interviews</small></div>
+        <div class="fact"><b>3</b><small>regions: Dhaka, Barisal, Sylhet</small></div>
+      </div>
+      <p>Urban respondents showed greater knowledge of chronic disease and breast cancer, went for regular check-ups more often and relied more on formal healthcare. Rural respondents expressed more fatalistic attitudes, relied more on traditional healers, and knew less about breast cancer and breast self-examination.</p>
+      <details>
+        <summary>Read the full abstract</summary>
+        <p>Bangladesh is facing growing concerns about chronic diseases, including diabetes, hypertension, cardiovascular disease, and cancer, particularly breast cancer. Although many chronic diseases are preventable and some are treatable, cultural beliefs, socioeconomic disparities, and unequal access to healthcare contribute to low levels of awareness and delayed diagnosis, particularly in rural communities. This research project investigates how cultural mindsets influence awareness of chronic diseases and cancer in Bangladesh, with a particular focus on breast cancer as a major health concern among women.</p>
+        <p>This mixed-methods study involved a quantitative survey of 500 people living in Dhaka, Barisal, and Sylhet, as well as qualitative interviews with 50 respondents. The results indicate prominent urban–rural differences: urban respondents demonstrated higher levels of general knowledge about chronic diseases and breast cancer, attended regular medical check-ups more frequently, and relied more on formal healthcare services. Rural respondents, by contrast, exhibited more fatalistic attitudes, greater reliance on traditional healers, and lower levels of breast cancer awareness and knowledge of breast self-examination.</p>
+        <p>This research highlights the urgent need for culturally responsive health interventions that accommodate local customs, address gender inequality, and improve the availability of healthcare services. Such interventions could be delivered through mobile health clinics, mass media, and community health workers. Policymakers should reduce disparities by developing strategies that reflect local cultural realities and promote the early diagnosis of chronic diseases and cancer.</p>
+      </details>
+      <p class="keywords"><strong>Keywords:</strong> cultural beliefs, chronic diseases, breast cancer awareness, health-seeking behaviour, Bangladesh</p>
+      <p class="keywords">Full paper available on request — <a href="#contact">get in touch</a>.</p>
+    </article>
+
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <div class="label">Education</div>
+    <h2>Academic background</h2>
+    <ul class="timeline">
+      <li>
+        <div class="when">2021</div>
+        <div><h3>Master of Arts (M.A.) in Sanskrit</h3><p>Department of Sanskrit, University of Dhaka</p></div>
+      </li>
+      <li>
+        <div class="when">2020</div>
+        <div><h3>Bachelor of Arts (B.A.) in Sanskrit</h3><p>Department of Sanskrit, University of Dhaka · Coursework in research methodology</p></div>
+      </li>
+      <li>
+        <div class="when">2016</div>
+        <div><h3>Higher Secondary Certificate (HSC), Science</h3><p>Govt. Muminunnesa Women's College, Mymensingh · GPA 5.00 / 5.00</p></div>
+      </li>
+      <li>
+        <div class="when">2014</div>
+        <div><h3>Secondary School Certificate (SSC), Science</h3><p>Mukul Niketan High School, Mymensingh · GPA 5.00 / 5.00</p></div>
+      </li>
+    </ul>
+
+    <div class="two-col" style="margin-top:44px">
+      <div>
+        <h2>Skills &amp; tests</h2>
+        <ul class="plain-list">
+          <li><strong>IELTS</strong> — Overall 7.0 (2026)</li>
+          <li><strong>SPSS</strong> — quantitative analysis</li>
+          <li><strong>NVivo</strong> — qualitative analysis</li>
+          <li>Microsoft Word, Excel, PowerPoint</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Experience</h2>
+        <ul class="plain-list">
+          <li><strong>Intern, Bangladesh Krishi Bank</strong><br><span class="muted">Oct–Dec 2025 · customer service, regulatory reporting</span></li>
+          <li><strong>Independent research</strong><br><span class="muted">2024–2025 · mixed-methods study on health beliefs</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 style="margin-top:44px">Leadership &amp; activities</h2>
+    <ul class="plain-list">
+      <li>Inter-Faculty Debate Champion, Faculty of Arts, University of Dhaka (2018)</li>
+      <li>Vice President &amp; Treasurer, Sanskrit Debating Club (2019–2022)</li>
+      <li>Office Secretary, Dhaka University Tourist Society (2018–2021)</li>
+      <li>Organiser: World Tourism Day (2017–2019), DU Centenary (2021), COVID-19 Social Awareness Program (2021)</li>
+      <li>Member: DU Model United Nations Association (DUMUNA), DU IT Society (DUITS)</li>
+    </ul>
+  </div>
+</section>
+
+<section id="posts">
+  <div class="wrap">
+    <div class="label">Posts</div>
+    <h2>Notes &amp; updates</h2>
+    <div id="post-list"></div>
+    <button class="toggle" id="show-all" hidden>Show older posts</button>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="label">Contact</div>
+    <h2>Get in touch</h2>
+    <p>I welcome conversations with prospective supervisors, researchers and anyone working on health and society in South Asia.</p>
+    <ul class="contact-list">
+      <li><span>Email</span><a href="mailto:anushreesarker3@gmail.com">anushreesarker3@gmail.com</a></li>
+      <li><span>University</span><a href="mailto:anushree-96-2016918876@snskrt.du.ac.bd">anushree-96-2016918876@snskrt.du.ac.bd</a></li>
+      <li><span>Location</span>Mymensingh, Bangladesh</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© <span id="yr">2026</span> Anushree Sarker</div>
+</footer>
+
+<script src="posts.js"></script>
+<script>
+  (function () {
+    var list = document.getElementById('post-list');
+    var posts = (typeof POSTS !== 'undefined' ? POSTS : []).slice()
+      .sort(function (a, b) { return (b.date || '').localeCompare(a.date || ''); });
+    var SHOW = 5;
+
+    function esc(s) {
+      return String(s).replace(/[&<>"']/g, function (c) {
+        return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+      });
+    }
+    function linkify(s) {
+      return s.replace(/(https?:\/\/[^\s<]+[^\s<.,;:)])/g, '<a href="$1">$1</a>');
+    }
+    function para(s) { return '<p>' + linkify(esc(s.trim())).replace(/\n/g, '<br>') + '</p>'; }
+    function niceDate(d) {
+      var t = new Date(d + 'T00:00:00');
+      return isNaN(t) ? esc(d) : t.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+    }
+
+    if (!posts.length) { list.innerHTML = '<p class="muted">No posts yet.</p>'; return; }
+
+    posts.forEach(function (p, i) {
+      var paras = String(p.text || '').split(/\n\s*\n/).filter(function (x) { return x.trim(); });
+      var el = document.createElement('article');
+      el.className = 'post';
+      if (i >= SHOW) el.hidden = true;
+      el.innerHTML =
+        '<div class="post-meta"><time>' + niceDate(p.date) + '</time>' +
+        (p.tag ? '<span class="post-tag">' + esc(p.tag) + '</span>' : '') + '</div>' +
+        '<h3>' + esc(p.title || 'Untitled') + '</h3>' +
+        (paras[0] ? para(paras[0]) : '') +
+        (paras.length > 1 ? '<div class="more">' + paras.slice(1).map(para).join('') + '</div>' +
+          '<button class="toggle">Read more</button>' : '');
+      var btn = el.querySelector('.toggle');
+      if (btn) btn.addEventListener('click', function () {
+        el.classList.toggle('open');
+        btn.textContent = el.classList.contains('open') ? 'Show less' : 'Read more';
+      });
+      list.appendChild(el);
+    });
+
+    var showAll = document.getElementById('show-all');
+    if (posts.length > SHOW) {
+      showAll.hidden = false;
+      showAll.addEventListener('click', function () {
+        list.querySelectorAll('.post[hidden]').forEach(function (e) { e.hidden = false; });
+        showAll.hidden = true;
+      });
+    }
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  })();
+</script>
+</body>
+</html>
